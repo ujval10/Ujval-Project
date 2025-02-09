@@ -1,9 +1,7 @@
-import { createStore } from 'redux';
-import reducers from './reducers/index'; // Ensure this path is correct
+import{createStore} from 'redux';
+import reducers from './actions/contains/reducers';
 
-const store = createStore(
-  reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = createStore(reducers,{},window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default store;
+
