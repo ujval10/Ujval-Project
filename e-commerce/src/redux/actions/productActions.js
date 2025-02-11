@@ -1,4 +1,4 @@
-import {ActionTypes} from "../contains/action-types";
+import { ActionTypes } from "../../redux/constants/action-types";  // ✅ Corrected
 export const setproducts = (products)=>{
     return{
         type: ActionTypes.SET_PRODUCTS,
@@ -11,4 +11,4 @@ export const selectedProduct = (product)=>{
         type: ActionTypes.SELECTED_PRODUCT,
         payload: product,
     };
-};
+}; 
