@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { selectedProduct, removeSelectedProduct } from "../redux/actions/productActions";
 import "./ProductDetail.css"; // Import CSS for styling
+// import "./ProductDetail.css"; // Import CSS for styling
 
 const ProductDetail = () => {
     const { productId } = useParams();
