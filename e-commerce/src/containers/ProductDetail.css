@@ -1,7 +1,90 @@
+/* Grid Container Styling */
+.ui.three.column.grid.container {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Row Styling */
+.ui.three.column.grid.container .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center columns horizontally */
+    width: 100%; /* Ensure the row takes full width */
+    gap: 20px; /* Add gap between columns */
+}
+
+/* Column Styling */
+.ui.three.column.grid.container .column {
+    flex: 1 1 300px; /* Allow columns to grow and shrink, with a base width of 300px */
+    max-width: 300px; /* Limit the maximum width of each column */
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+}
+
+/* Card Styling */
+.ui.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Space out content */
+    width: 100%; /* Ensure the card takes full width */
+    height: 100%; /* Ensure the card takes full height */
+    border: 1px solid #e0e0e0; /* Add a border for better visibility */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Image Container Styling */
+.ui.card .image {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px; /* Fixed height for images */
+    width: 100%; /* Ensure the container takes full width */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.ui.card .image img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    max-height: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits without distortion */
+}
+
+/* Content Styling */
+.ui.card .content {
+    text-align: center; /* Center text */
+    width: 100%; /* Ensure the content takes full width */
+}
+
+.ui.card .header {
+    font-size: 1.2rem; /* Increase font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.ui.card .meta.price {
+    font-size: 1.1rem; /* Adjust font size for the price */
+    color: #2bb3c0; /* Match the price-tag color */
+    margin-bottom: 10px; /* Space below the price */
+}
+
+.ui.card .meta {
+    font-size: 0.9rem; /* Adjust font size for the category */
+    color: #666; /* Gray color for the category */
+}
+
+/* Product Details Container Styling */
 .product-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     width: 80%;
     max-width: 1100px;
     margin: 50px auto; /* Adds space from the header */
@@ -9,49 +92,64 @@
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 20px;
+    gap: 20px; /* Space between elements */
 }
 
-/* Image Styling */
-.image-container {
-    flex: 1;
-    position: relative;
+/* Image Container Styling for Product Details */
+.product-container .image-container {
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 400px; /* Limit the maximum width */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Space below the image */
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.product-container .image-container img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    max-height: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits without distortion */
 }
 
-/* Details Container */
-.details-container {
-    flex: 1;
-    padding: 20px;
-    max-width: 400px;
+/* Details Container Styling for Product Details */
+.product-container .details-container {
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: center; /* Center text */
 }
 
-.price-tag {
+.product-container .details-container h2 {
+    font-size: 1.8rem; /* Increase font size for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.product-container .details-container .price-tag {
     background-color: #2bb3c0;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
+    margin-bottom: 15px; /* Space below the price */
 }
 
-.category {
+.product-container .details-container .category {
     background-color: #f1f1f1;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 10px 0; /* Space around the category */
 }
 
-.add-to-cart {
+.product-container .details-container p {
+    font-size: 1rem; /* Adjust font size for the description */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.product-container .details-container .add-to-cart {
     background-color: #d9534f;
     color: white;
     border: none;
@@ -59,4 +157,7 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Full-width button */
+    max-width: 200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the button */
 }
