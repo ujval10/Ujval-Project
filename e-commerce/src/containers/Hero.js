@@ -7,8 +7,8 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/Images/no.jpg)`,
         backgroundSize: "cover",
-        backgroundPosition: "center top -40px", // Slight upward movement
-        height: "400px",
+        backgroundPosition: "center top -80px", // Slight upward movement
+        height: "500px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
