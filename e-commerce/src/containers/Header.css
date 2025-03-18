@@ -1,0 +1,37 @@
+/* Header container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.header h2 {
+    margin: 0;
+}
+
+/* Center the search bar */
+.search-bar {
+    position: absolute;
+    top: 15px; /* Same top alignment as cart icon */
+    right: 80px; /* Adjust distance from cart icon */
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white; /* Ensures visibility */
+}
+
+
+/* Cart icon styling */
+.cart-icon {
+    font-size: 24px; /* Adjust size as needed */
+    color: #333;
+    position: absolute;
+    top: 15px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
+}

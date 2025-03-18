@@ -18,7 +18,8 @@ const Hero = () => {
         textShadow: "2px 2px 8px rgba(0,0,0,0.5)",
       }}
     >
-      Great Summer Sale
+      Great Summer Sale 
+      India's Great Festival
     </div>
   );
 };
