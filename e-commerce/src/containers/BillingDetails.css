@@ -1,0 +1,114 @@
+/* BillingDetails.css */
+
+/* Main container */
+.billing-details-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* On larger screens, arrange preview and form side by side */
+  @media (min-width: 768px) {
+    .billing-details-container {
+      flex-direction: row;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  }
+  
+  /* Product preview styles */
+  .product-preview {
+    flex: 1;
+    padding: 1.5rem;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  .product-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .product-info .price-tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-info .category {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Billing form styles */
+  .billing-form {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .billing-form h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 0.5rem;
+  }
+  
+  .form-field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .form-field input,
+  .form-field select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    outline: none;
+    border-color: #d9534f;
+  }
+  
+  .billing-form button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .billing-form button:hover {
+    background-color: #c9302c;
+  }
+  

@@ -1,0 +1,7 @@
+/* ProductComponent.css */
+
+/* Add a bottom margin to each column (product card) */
+.ui.three.column.grid.container .column {
+    margin-bottom: 20px; /* Adjust this value to increase or decrease vertical space */
+  }
+  

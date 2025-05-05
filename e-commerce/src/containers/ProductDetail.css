@@ -150,7 +150,16 @@
     margin-bottom: 20px;
 }
 
-.product-container .details-container .add-to-cart {
+/* Container for the buttons */
+.product-container .details-container .button-group {
+    display: flex;
+    justify-content: center;  /* centers the buttons horizontally */
+    gap: 15px;                /* space between the buttons */
+}
+
+/* Common styling for both buttons */
+.product-container .details-container .add-to-cart,
+.product-container .details-container .Buy-Now {
     background-color: #d9534f;
     color: white;
     border: none;
@@ -160,5 +169,7 @@
     cursor: pointer;
     width: 100%;
     max-width: 200px;
-    margin: 0 auto;
+    /* Removed margin: 0 auto; to let flexbox handle layout */
 }
+
+
